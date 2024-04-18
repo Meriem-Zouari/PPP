@@ -1,0 +1,117 @@
+#destination{
+    width: 200px;
+    height: 30px;
+    display: flex;
+    margin-right: 5%;
+
+}
+
+.form-label{
+    margin-right: 5%;
+
+}
+.label1{
+    margin-right: 5%;
+}
+.card-body{
+    width: 600px; 
+    height: 350px; 
+    border-radius: 5px;
+    backdrop-filter: blur(px);
+    -webkit-backdrop-filter: blur(9px);
+}
+.card-header{
+    width: 600px; 
+    height: 40  px;
+    backdrop-filter: blur(px);
+    -webkit-backdrop-filter: blur(9px);
+}
+.card {
+     width : 600px;
+     height : 600px;
+     margin-left: 360px;
+     backdrop-filter: blur(px) ;
+  -webkit-backdrop-filter: blur(9px);
+
+
+}
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #eee;
+  }
+  .button-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }  
+  select{
+    width:50px;
+  }
+  .radio-container {
+    display: flex; /* Inline for side-by-side placement */
+    
+    align-items: center;
+    margin-bottom: 10px; /* Adjust spacing as needed */
+  }
+
+  .radio-container label {
+    margin-right: 10px; /* Adjust spacing as needed */
+  }
+
+  input[type="radio"] {
+    margin-right: 5px; /* Adjust spacing as needed */
+  }
+
+  /* Optional styling for visual consistency (adjust as needed) */
+  .radio-container input[type="text"] {
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 3px;
+  }
+
+
+
+
+.destination-image {
+  display: block; /* Ensure the image is always visible */
+}
+
+
+
+
+
+.background-image {
+  position: fixed;
+  top: 0;
+  width: 1300px;
+  height: 500px;
+  background: url("./assets/plane.jpg"), #000;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+.page-section {
+  position: relative;
+}
+
+.destination-image {
+  position: absolute;
+  bottom: 0;
+ 
+  z-index: 1;
+  width: 100%;
+   /* Adjust as needed */
+}
