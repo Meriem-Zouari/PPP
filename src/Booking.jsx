@@ -3,7 +3,8 @@ import './Booking.css';
 
 function Booking  ()  {
   return (
-    <><div className='background-image'>
+    <> <div className='container'>
+    <div className='background-image'>
       <div className="card text-center" style={{backdropFilter: 'blur(9px)',
   WebkitBackdropFilter: 'blur(9px)',
   backgroundColor: 'rgba(255, 255, 255, 0.1)'
@@ -27,13 +28,13 @@ function Booking  ()  {
                 <input type="text" className="form-control" id="destination" placeholder="Enter any city or airport" />
               </div>
             </div>
-            <div class="radio-container">
+            <div className="radio-container">
     <input type="radio" id="round-trip" name="trip-type" value="round-trip"/>
-    <label for="round-trip">Round-trip</label>
+    <label htmlFor="round-trip">Round-trip</label>
   </div>
-  <div class="radio-container">
+  <div className="radio-container">
     <input type="radio" id="one-way" name="trip-type" value="one-way"/>
-    <label for="one-way">One-way</label>
+    <label htmlFor="one-way">One-way</label>
   </div>
             <div className="form-row">
               {/* Depart On */}
@@ -99,14 +100,14 @@ function Booking  ()  {
       </div>
       <br></br>
       <br></br>
+      
       <br></br>
       <br></br>
-      <div  class="page-section">
-	<div class="container">
-    <img src="./src/assets/Destination.jpg" className="destination-image"/>
+      <div className="destination-image-container">  {/* Container for destination image */}
+          <img src="./src/assets/Destination.jpg"></img>
+        </div>
+  
     </div>
-    </div>
-    
        
     </>
     

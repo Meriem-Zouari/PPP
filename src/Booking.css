@@ -79,39 +79,36 @@ button {
 
 
 
-.destination-image {
-  display: block; /* Ensure the image is always visible */
-}
+
+
+
 
 
 
 
 
 .background-image {
-  position: fixed;
   top: 0;
-  width: 1300px;
+  width: 1100px;
   height: 500px;
   background: url("./assets/plane.jpg"), #000;
   background-position: center;
   background-size: cover;
-  z-index: -1;
+
 }
 
-.container {
-  position: relative;
-  z-index: 1;
-}
 
-.page-section {
-  position: relative;
-}
 
-.destination-image {
-  position: absolute;
-  bottom: 0;
- 
-  z-index: 1;
-  width: 100%;
-   /* Adjust as needed */
+
+
+.container{
+  display:grid;
+  justify-content: center;
+  width:100%;
+  max-width:1300px;
+  margin:0 auto;
+
+}
+.destination-image-container{
+  width: 1100px;
 }
