@@ -1,0 +1,72 @@
+.userprofile {
+  text-align: center; 
+}
+
+.userprofile .title h1 {
+  font-family: 'Arial', sans-serif;
+  font-size: 40px; 
+  color: #333; 
+  margin-bottom: 20px; 
+  margin-top: 20px; 
+
+}
+.userprofilein {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 10vh;
+  gap: 20px;
+}
+
+.userprofile .userprofilein .left {
+  width: 20%;
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 5px;
+  min-height: 50vh;
+}
+
+.userprofile .userprofilein .right {
+  width: 60%;
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 5px;
+  min-height: 50vh;
+}
+
+@media (max-width: 800px) {
+  .usersidebar span{
+      font-size: 12px;
+  }
+}
+@media (max-width: 500px) {
+  .usersidebar {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      padding: 10px;
+  }
+  .usersidebar .s1 , .usersidebar .s2{
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      padding: 3px;
+  }
+  .usersidebar .s1{
+      background-color: white;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow:  0px 0px 10px 0px rgba(0,0,0,0.1);
+      padding: 5px 20px;
+  }
+  .usersidebar .s2{
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow:  0px 0px 10px 0px rgba(0,0,0,0.1);
+      padding: 5px 20px;
+
+  }
+  .usersidebar span{
+      font-size: 12px;
+  }
+}
