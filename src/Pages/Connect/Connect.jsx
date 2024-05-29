@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import './Connect.css'
 
-import user_icon from '../../resources/person.png'
-import email_icon from '../../resources/email.png'
-import password_icon from '../../resources/password.png'
-import backgroundImage from '../../resources/BACKGROUND.jpg'; // Import your image
+import user_icon from '../../assets/person.png'
+import email_icon from '../../assets/email.png'
+import password_icon from '../../assets/password.png'
+import backgroundImage from '../../assets/BACKGROUND.jpg'; // Import your image
 
 const LoginSignup = () => {
   const [action,setAction]=useState("Sign Up")
