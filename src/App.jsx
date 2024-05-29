@@ -5,6 +5,7 @@ import './App.css'
 // App.jsx
 
 import React from 'react';
+import Home from './Pages/Home/Home'
 import Booking from './Pages/Booking/Booking';
 import Connect from './Pages/Connect/Connect';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -14,6 +15,7 @@ function App() {
     <>
     <Router>
       <Routes>
+      <Route path="/" element={<Home/>}/>
       <Route path="/Connect" element={<Connect/>}/>
       <Route path="/Booking" element={<Booking/>}/>
       
