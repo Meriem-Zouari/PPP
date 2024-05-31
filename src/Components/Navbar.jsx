@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from  "styled-components";
-import resources from "../assets/image.png"
+import image from "../assets/image.png"
 import {Link} from "react-router-dom"
 
 export default function Navbar() {
@@ -8,22 +8,16 @@ export default function Navbar() {
       <Nav>
         <div className='brand'>
           <div className='container'>
-            <img src={resources }alt="OOGA" />
+            <img src={image }alt="OOGA" />
         </div>
         </div>
         <ul>
         <li>        
-          <Link to="/">home</Link>
+          <Link to="/">Home</Link>
         </li>
         <li><Link to="/Connect">Connect</Link></li>
-        <li><link to=""></link></li>
-        </ul>
-        <ul>
           <li>
-            <a href="#services">About</a>
-          </li>
-          <li>
-            <a href="#recommend">Places</a>
+            <a href="#recommend">Destinations</a>
           </li>
           <li>
             <a href="#testimonials">Testimonials</a>
@@ -37,7 +31,7 @@ export default function Navbar() {
 const Nav = styled.nav`
 
 display: flex;
-justify-content: space-between;
+
 align-items: center;
 brand{
   .container {
@@ -48,6 +42,8 @@ brand{
     gap: 0.4 rem ;
     font-size: 1.2 rem ;
     font-weight: 900 ;
+    width:50px;
+    height:50px;
   }
   .toggle
   {
@@ -59,13 +55,15 @@ ul
 display:flex;
 list-style-type: none;
 gap: 1rem; 
+
 li
 {
   a{
     text-decoration: none;
-    color:#0077b6;
+    color:#023e8a;
     font-size: 1.2 rem;
     transition: 0ms.1s ease-in-out;
+    font-weight: 900 ;
     &:hover{
       color:#023e8a;
     }

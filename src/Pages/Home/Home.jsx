@@ -11,7 +11,6 @@ export default function () {
     <div>
       <Navbar />
       <Hero />
-      <Services />
       <Recommend />
       <Testimonials />
     </div>

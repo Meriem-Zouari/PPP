@@ -8,30 +8,30 @@ export default function Hero() {
       <div className="background">
         <img src={pichero} alt="" />
       </div>
-      <div className= 'content'>
+      <div className= 'contentHero'>
         <div classname="title">
          <h1>TRAVEL TO EXPLORE</h1>
 
          <p>
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ducimus corporis ad sit eligendi excepturi dolore, quas reiciendis doloremque quia quaerat optio, dolores exercitationem nobis deleniti officia amet, est corrupti!
+         Discover stunning destinations with SkyTraveler. Whether you're looking for a relaxing beach vacation or an adventurous getaway, we've got you covered. Book your journey with us and explore the world like never before.
          </p>
 
         </div>
 
       <div className="search">
-        <div className="container">
+        <div className="containerHero">
           <label htmlFor="">Where you want to go</label>
           <input type="text" placeholder="search your location"/>
         </div>
-        <div className="container">
-          <label htmlFor="">check in</label>
+        <div className="containerHero">
+          <label htmlFor="">Depart on</label>
           <input type="date" />
         </div>
-        <div className="container">
-          <label htmlFor="">check out</label>
+        <div className="containerHero">
+          <label htmlFor="">Return on</label>
           <input type="date" />
         </div>
-        <button>explore now </button>
+        <button  >Explore now </button>
       </div>
     </div>  
   </Section>
@@ -48,11 +48,11 @@ height: 100%;
     filter: brightness(60%);
   }
 }
-.content{
+.contentHero{
   height:100%;
   width:100%;
   position: absolute;
-  top:0;
+  top:200px;
   z-index :3;
   text-align: center;
   display: flex;
@@ -80,7 +80,7 @@ height: 100%;
   justify-content: center;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  .container{
+  .containerHero{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -111,7 +111,7 @@ height: 100%;
     cursor: pointer;
     border-radius: 0.3rem;
     border: none;
-    color: white;
+    color: #4D869C;
     background-color: #4361ee;
     font-size: 1.1rem;
     text-transform: uppercase;

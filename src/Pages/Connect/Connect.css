@@ -1,15 +1,21 @@
+
+
+
+
 .containerr{
+
   display:flex;
   flex-direction:column;
   margin:auto;
-  margin-top:0px;
+  margin-top :0px;
   height: fit-content ;
-  width:  fit-content ;
+  width:  600px ;
   padding-bottom: 30px;
   background-color: rgba(255,255,255,0.5);
   
 }
 .background{
+position : absolute;
 width: fit-content ;
 height:  fit-content ;
 }
@@ -24,21 +30,22 @@ height:  fit-content ;
 }
 
 .text{
-  color:#1d91cc;
+  color:#0e516c;
   font-size: 30px;
   font-weight:700;
   margin-top: 30px;
+  font-family: Monteserrat;
 }    
 
 .underline{
   width:61px;
   height:6px;
-  background:#1d91cc;
+  background:#0e516c;
   border-radius: 9px;
 }
 
 .inputs{
-  margin-top: 160px;
+  margin-top: 100px;
   display:flex;
   flex-direction: column;
   gap:25px;
@@ -85,6 +92,7 @@ height:  fit-content ;
   display:flex;
   gap:30px;
   margin:60px auto;
+  color: #0e516c;
 }
 .submit{
   display:flex;
@@ -93,7 +101,7 @@ height:  fit-content ;
   width: 220px;
   height: 59px;
   color:#fff;
-  background: #1d91cc;
+  background: #0e516c;
   border-radius: 50px;
   font-size: 19px;
   font-weight: 700;

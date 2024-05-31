@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import avatarImage from "../assets/youssefrouissi.jpg";
-import avatarImageimtiez from "../assets/imtiezmrad.png";
-import avatarImageEmna from "../assets/avatarimageEmna.jpg";
+import avatarImage from "../assets/SecondCustomer.avif";
+import avatarImageimtiez from "../assets/ThirdCustomer.avif";
+import avatarImageEmna from "../assets/Firstcustomer.jpg";
 
 export default function Testimonial() {
   return (
@@ -13,37 +13,37 @@ export default function Testimonial() {
       <div className="testimonials">
         <div className="testimonial">
           <p>
-            je suis Emna de jandouba ,Algerie. bisous bisous.
+          "I recently booked a flight through SkyTraveler Booking and the experience was fantastic! The website is user-friendly, and I found the best deals quickly. The customer support team was extremely helpful and resolved my queries within minutes.Highly recommend this service for a hassle-free booking experience!"
           </p>
           <div className="info">
             <img src={avatarImageEmna} alt="" />
             <div className="details">
-              <h4>Emna Miraoui</h4>
-              <span>Mar2a Moutal9a min jandouba/djerba/tataouine/mednine/beja/24 wilaya </span>
+              <h4>Anna M.</h4>
+              
             </div>
           </div>
         </div>
         <div className="testimonial">
           <p>
-            ena youssef Rouissi min saltanet 3oman win7ib tounes barcha barcha. kouskous kouskous brika zlebia 
+          "Booking my flight with SkyTraveler was a breeze! The whole process was smooth, and I appreciated the clear and concise information provided at each step. The prices were competitive, and I even received notifications about flight status updates, which kept me informed throughout my journey. Definitely my go-to flight booking service from now on!"
           </p>
           <div className="info">
             <img src={avatarImage} alt="" />
             <div className="details">
-              <h4>Rouissi Youssef</h4>
-              <span>INGENIEUR A RADES basé BARON centre ville </span>
+              <h4>John D.</h4>
+
             </div>
           </div>
         </div>
         <div className="testimonial">
           <p>
-            benzart endroit magnifique surtout manzel abd el ra7man. TCHON kaYAS.
+          "I am so impressed with the efficiency and reliability of SkyTraveler Booking! I was able to find the perfect flight within minutes, thanks to their easy-to-navigate site and great filtering options. I will certainly be using their service for all my future travel plans!"
           </p>
           <div className="info">
             <img src={avatarImageimtiez} alt="" />
             <div className="details">
-              <h4>Imtiez Mrad</h4>
-              <span>Bodybuilder basé à Menzal abd el ra7man</span>
+              <h4>Emily S.</h4>
+              
             </div>
           </div>
         </div>
