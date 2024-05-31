@@ -9,7 +9,7 @@ export default function () {
 
   return (
     <div>
-      <Navbar />
+     
       <Hero />
       <Recommend />
       <Testimonials />
