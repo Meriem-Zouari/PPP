@@ -91,7 +91,7 @@ button {
   top: 0;
   width: 1100px;
   height: 500px;
-  background: url("./assets/plane.jpg"), #000;
+  background: url("../assets/plane.jpg"), #000;
   background-position: center;
   background-size: cover;
 

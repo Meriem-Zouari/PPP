@@ -1,10 +1,11 @@
 import React , { useState }  from 'react';
 import './Booking.css';
-
+import backgroundimage from '../../assets/plane.jpg'
 function Booking  ()  {
   return (
     <> <div className='container'>
     <div className='background-image'>
+      
       <div className="card text-center" style={{backdropFilter: 'blur(9px)',
   WebkitBackdropFilter: 'blur(9px)',
   backgroundColor: 'rgba(255, 255, 255, 0.1)'
