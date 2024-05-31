@@ -1,14 +1,15 @@
 import React, { useEffect } from "react";
 import Navbar from "../../Components/Navbar";
-import Booking from "../../Components/Bookingcard";
+import Bookingcard from "../../Components/Bookingcard";
 import Destinfo from "../../Components/Destinationinfo";
-export default function () {
+ function Booking () {
 
   return (
     <div>
       <Navbar />
-      <Booking/>
+      <Bookingcard/>
       <Destinfo />
     </div>
   );
 }
+export default Booking;

@@ -111,4 +111,7 @@ button {
 }
 .destination-image-container{
   width: 1100px;
+  margin-top: 200px;
+  margin-right: auto;
+  margin-left: auto;
 }

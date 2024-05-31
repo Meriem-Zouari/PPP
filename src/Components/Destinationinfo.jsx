@@ -1,6 +1,6 @@
 import React , { useState }  from 'react';
-import '../../Booking/Booking.css';
-import Destination from '../../assets/Destination.jpg'
+import "../Pages/Booking/Booking.css";
+import Destination from '../assets/Francedest.png'
 
 function Destinfo  ()  {
     return (

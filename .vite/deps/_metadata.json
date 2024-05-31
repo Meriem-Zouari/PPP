@@ -1,8 +1,40 @@
 {
-  "hash": "d7fcadc7",
+  "hash": "bdd741a4",
   "configHash": "94ea05d0",
-  "lockfileHash": "e3b0c442",
-  "browserHash": "da6f2ef1",
-  "optimized": {},
-  "chunks": {}
+  "lockfileHash": "017fa29a",
+  "browserHash": "25fa6b1d",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "c5260157",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "fd5d337d",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "e934c7e9",
+      "needsInterop": false
+    },
+    "styled-components": {
+      "src": "../../node_modules/styled-components/dist/styled-components.browser.esm.js",
+      "file": "styled-components.js",
+      "fileHash": "de817dc6",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-UWZXFKA6": {
+      "file": "chunk-UWZXFKA6.js"
+    },
+    "chunk-UPDK7Z2H": {
+      "file": "chunk-UPDK7Z2H.js"
+    }
+  }
 }
