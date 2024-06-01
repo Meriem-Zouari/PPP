@@ -12,20 +12,19 @@ export default function Navbar() {
         </div>
         <ul>
         <li>        
-          <Link to="/">Home</Link>
+          <Link to="/">HOME</Link>
         </li>
         <li>        
-          <Link to="/Dashboard">AdminDashboard</Link>
+          <Link to="/Dashboard">ADMINDASHBOARD</Link>
         </li>
-        <li><Link to="/Connect">Connect</Link></li>
+        <li><Link to="/Register">SIGN UP</Link></li>
+        <li><Link to="/Login">SIGN IN</Link></li>
           <li>
-            <Link to="/Destinations">Destinations</Link>
+            <Link to="/Destinations">DESTINATIONS</Link>
           </li>
+          
           <li>
-            <a href="#testimonials">Testimonials</a>
-          </li>
-          <li>
-          <Link to="/user/accountsettings">Profile</Link>
+          <Link to="/user/accountsettings">PROFILE</Link>
         </li>
         </ul>
       </Nav>
@@ -49,6 +48,7 @@ brand{
     font-weight: 900 ;
     width:50px;
     height:50px;
+
   }
   .toggle
   {

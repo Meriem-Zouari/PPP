@@ -1,32 +1,30 @@
-import React, { useState } from 'react'
-import './Connect.css'
-
+import './Register.css'
 import user_icon from '../../assets/person.png'
 import email_icon from '../../assets/email.png'
 import password_icon from '../../assets/password.png'
-import backgroundImage from '../../assets/Booking.jpg'; // Import your image
+import backgroundImage from '../../assets/Booking.jpg'; 
 
-const LoginSignup = () => {
-  const [action,setAction]=useState("Sign Up")
+const Register = () => {
   return (
-    <div classname="background"
+    <div className="background"
     style={{
       backgroundImage: `url(${backgroundImage})`, // Set the background image
       backgroundSize: 'cover', // Cover the entire area
       backgroundPosition: 'center', // Center the background image
-      minHeight: '100vh', // Make sure it covers the entire viewport height
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center'
     }}
   >
       <div className='containerr' >
         <div className="header">
-          <div className="text">{action}</div>
-          {/* <div className="underline"></div> */}
+          <div className="text">Register</div>
         </div>
         <div className="inputs">
-          {action ==="Login"?<div></div>:<div className="input">
+          <div className="input">
             <img src={user_icon} alt="" x/>
-            <input type="text" placeholder='Name' />
-          </div>}
+            <input type="text" placeholder='UserName' />
+          </div>
 
           <div className="input">
             <img src={email_icon} alt="" />
@@ -37,15 +35,15 @@ const LoginSignup = () => {
             <input type="password" placeholder='Password' />
           </div>
         </div>
-        {action==="Sign Up"?<div></div>:<div className="forgot-password">Lost Password? <span>Click Here!</span> </div>}
         <div className="submit-container">
-          <div className={action==="Login"?"Submit gray":"submit"} onClick={()=>{setAction("Sign Up")}}>Sign Up</div>
-          <div className={action==="Sign Up"?"Submit gray":"submit"} onClick={()=>{setAction("Login")}}>Login</div>
-        </div>
+          <button className="submit" type="button"  >
+            Sign up
+          </button>
+        </div> 
         
       </div>
     </div>
   )
 }
 
-export default LoginSignup
+export default Register
