@@ -6,7 +6,10 @@
     align-items: center;
   }
   .accountsettings h1{
-    padding: 10px 20px;
+    padding: 0px 0px;
+    margin-left: 0px;
+    font-weight:bold;
+    color:#4D869C;
   }
   .accountsettings .form{
     display: flex;
