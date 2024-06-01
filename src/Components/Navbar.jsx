@@ -7,10 +7,9 @@ export default function Navbar() {
   return (
       <Nav>
         <div className='brand'>
-          <div className='container'>
             <img src={image }alt="OOGA" />
         </div>
-        </div>
+        <div className='navi'>
         <ul>
         <li>        
           <Link to="/">Home</Link>
@@ -26,39 +25,40 @@ export default function Navbar() {
           <Link to="/user/accountsettings">Profile</Link>
         </li>
         </ul>
+        </div>
       </Nav>
 
 
     );
 }
 const Nav = styled.nav`
-
-display: flex;
-
-align-items: center;
-brand{
-  .container {
-    cursor: pointer ;
-    display: flex ;
-    justify-content: center ;
-    align-items: center ;
-    gap: 0.4 rem ;
-    font-size: 1.2 rem ;
-    font-weight: 900 ;
-    width:50px;
-    height:50px;
-  }
-  .toggle
-  {
-  .display: none;
-  }
+padding-top:20px;
+.navi{
+  display: fit-content;
+  background-color: #F5F2E9;
+  padding-right: 20px;
+  border-radius: 15px 50px;
 }
+background-color: #0d8d9e;
+display: flex;
+img {
+  padding-left: 50px;
+  width: 80%
+}
+ul {
+  padding-top: 14px;
+
+}
+align-items: center;
 ul
 {
 display:flex;
 list-style-type: none;
 gap: 1rem; 
-
+brand{
+  background-color:black;
+  padding: 500px;
+}
 li
 {
   a{

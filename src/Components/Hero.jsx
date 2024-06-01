@@ -48,6 +48,11 @@ height: 100%;
     filter: brightness(60%);
   }
 }
+p{
+  width:80%;  
+  text-align: center;
+  padding-left: 350px;
+}
 .contentHero{
   height:100%;
   width:100%;
@@ -106,7 +111,7 @@ height: 100%;
       }
     }
   }
-  button{
+  .button{
     padding: 1rem;
     cursor: pointer;
     border-radius: 0.3rem;

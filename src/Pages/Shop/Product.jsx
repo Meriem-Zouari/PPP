@@ -1,5 +1,7 @@
 import React from 'react'
-
+import info1 from "../../assets/info1.png";
+import info2 from "../../assets/info2.png";
+import info3 from "../../assets/info3.png";
 import styled from "styled-components";
 
 const Product = (props) => {
@@ -33,7 +35,17 @@ const Product = (props) => {
 
 export default Product;
 */
-return (
+
+
+
+
+
+
+
+
+
+
+  return (
     <Section id="recommend">
 
       <div className="destinations">
@@ -43,7 +55,11 @@ return (
           <h3>{title}</h3>
           <p>{subTitle}</p>
           <div className="info">
-            
+            <div className="services">
+              <img src={info1} alt="" />
+              <img src={info2} alt="" />
+              <img src={info3} alt="" />
+            </div>
             <h4>{cost}</h4>
           </div>
           <div className="distance">
@@ -82,10 +98,12 @@ const Section = styled.section`
   }
   .destinations {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0;
+    grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
-    padding: 0 3rem;
+    padding: 0 ;
     .destination {
+      grid-gap: 50px;
       padding: 1rem;
       display: flex;
       flex-direction: column;
@@ -93,6 +111,8 @@ const Section = styled.section`
       background-color: #8338ec14;
       border-radius: 1rem;
       transition: 0.3s ease-in-out;
+      width:400px;
+      height:400px;
       &:hover {
         transform: translateX(0.4rem) translateY(-1rem);
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

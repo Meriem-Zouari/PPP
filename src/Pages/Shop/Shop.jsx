@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { PRODUCTS } from '../../products';
 import Product from './Product';
@@ -26,10 +27,11 @@ const Shop = () => {
           max="5000" // Assuming the maximum price is 5000, you can adjust this value accordingly
           value={priceFilter}
           onChange={handlePriceFilterChange}
+          
         />
         <span>Price: ${priceFilter}</span>
       </div>
-      <div className="products">
+      <div className="destinations">
         {filteredProducts.map((product) => (
           <Product key={product.id} data={product} />
         ))}
@@ -39,3 +41,4 @@ const Shop = () => {
 };
 
 export default Shop;
+

@@ -17,16 +17,19 @@ function App() {
   return (
     <>
     <Router>
+      
       <Navbar/>
+      
       <Routes>
+      
       <Route path="/" element={<Home/>}/>
       <Route path="/Connect" element={<Connect/>}/>
       <Route path="/Booking" element={<Booking/>}/>
       <Route path="/Destinations" element={<Shop/>} />
       <Route path='/user/:activepage' element={<Userprofile/>} />
 
-      
       </Routes>
+      
       </Router>
     </>
   );
