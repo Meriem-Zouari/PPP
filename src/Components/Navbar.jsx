@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from  "styled-components";
 import image from "../assets/image.png"
 import {Link} from "react-router-dom"
@@ -14,6 +13,9 @@ export default function Navbar() {
         <ul>
         <li>        
           <Link to="/">Home</Link>
+        </li>
+        <li>        
+          <Link to="/Dashboard">AdminDashboard</Link>
         </li>
         <li><Link to="/Connect">Connect</Link></li>
           <li>
