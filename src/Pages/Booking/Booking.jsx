@@ -8,7 +8,7 @@ import Destinfo from "../../Components/Destinationinfo";
     <div>
     
       <Bookingcard/>
-      <Destinfo />
+   
     </div>
   );
 }

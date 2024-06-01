@@ -17,11 +17,14 @@ export default function Navbar() {
         </li>
         <li><Link to="/Connect">Connect</Link></li>
           <li>
-            <a href="#recommend">Destinations</a>
+            <Link to="/Destinations">Destinations</Link>
           </li>
           <li>
             <a href="#testimonials">Testimonials</a>
           </li>
+          <li>
+          <Link to="/user/accountsettings">Profile</Link>
+        </li>
         </ul>
       </Nav>
 

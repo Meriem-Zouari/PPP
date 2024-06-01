@@ -4,7 +4,7 @@ import './Connect.css'
 import user_icon from '../../assets/person.png'
 import email_icon from '../../assets/email.png'
 import password_icon from '../../assets/password.png'
-import backgroundImage from '../../assets/sky.jpg'; // Import your image
+import backgroundImage from '../../assets/Booking.jpg'; // Import your image
 
 const LoginSignup = () => {
   const [action,setAction]=useState("Sign Up")

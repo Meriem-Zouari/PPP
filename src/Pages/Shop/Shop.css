@@ -1,0 +1,233 @@
+/*git 
+.shopTitle {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 40px;
+}
+/*
+.products {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+
+}
+
+.product {
+  border-radius: 15px;
+  width: 70%;
+  height: 350px;
+  margin: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 0 10rem;
+  margin-left: 0px;
+  margin-right: 0px;
+  
+}
+
+.product .box{
+  background: #fff;
+  text-align: center;
+  transition: .3s ease-in-out;
+  border-radius: 15px;
+
+
+}
+
+.product .box:hover{
+  box-shadow: rgba(17,12,46,0.15) 0px 48px 100px 0px ;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.card .image{
+  width: 80%;
+  background: #fff;
+  margin: 20px auto 25px;
+  position: relative;
+  display: flex;
+  border-radius: 25px;
+  
+  /* Center the image horizontally and vertically */
+/*
+  justify-content: center; /* Center horizontally */
+  /*
+  align-items: center; /* Center vertically */
+  /*
+}
+
+.card .image::before{
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  bottom: 8px;
+  left: 10px;
+  border-radius: 50%;
+}
+
+.card .image img {
+  width: 80%;
+  height: 70%;
+  border-radius: 25px;
+  transition: .3s ease-in-out;
+  
+}
+.card .image:hover img{
+  transform: scale(1.1);
+}
+
+.card .desc{
+  width:80%;
+  margin:auto;
+  margin-bottom: 20px;
+}
+.card .desc h1{
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.card .desc p {
+  font-size: 14px;
+  margin: 10px 0 20px;
+}
+.card span{
+  font-size: 20px;
+}
+
+.card .star .icon{
+  font-size: 18px;
+  color:#fcaa34;
+}
+
+.product .description {
+  text-align: center;
+}
+/*
+.product:hover {
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+*/
+/*
+.addToCartBttn {
+  border: none;
+  width: 100%;
+  padding: 16px 20px;
+  margin-top: 15px;
+  outline: none;
+  color: #28c8a4;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.addToCartBttn:hover {
+  background-color: #28c8a4;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 998px) {
+  .products{
+    padding: 0 3rem;
+    
+  }
+  .card .image{
+    width: 90%;
+  } 
+}
+
+@media screen and (max-width: 800px) {
+  .products{
+    grid-template-columns: 1fr 1fr;
+    padding: 5rem 3rem;
+    
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .products{
+    grid-template-columns: 1fr;
+    padding: 5rem 2rem;
+    
+  }
+  .card .desc{
+    width:90%;
+  }
+}
+
+/* Style the price filter range */
+.shopTitle input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0; /* Background color of the track */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set opacity */
+    transition: opacity 0.2s;
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 20px;
+  }
+  
+  /* Style the thumb (indicator) of the range */
+  .shopTitle input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #28c8a4; /* Thumb color */
+    border-radius: 50%; /* Rounded shape */
+    cursor: pointer; /* Cursor style */
+  }
+  
+  /* Change thumb color on hover */
+  .shopTitle input[type="range"]::-webkit-slider-thumb:hover {
+    background: #28c8a4;
+  }
+  
+  /* Change track color when thumb is being dragged */
+  .shopTitle input[type="range"]:active::-webkit-slider-thumb {
+    background: #28c8a4;
+  }
+  
+  /* Change track color */
+  .shopTitle input[type="range"]::-moz-range-track {
+    background: #f0f0f0; /* Background color of the track */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  /* Style for the thumb (indicator) in Firefox */
+  .shopTitle input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #28c8a4; /* Thumb color */
+    border-radius: 50%; /* Rounded shape */
+    cursor: pointer; /* Cursor style */
+  }
+  
+  /* Style for the thumb (indicator) in IE */
+  .shopTitle input[type="range"]::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    background: #28c8a4; /* Thumb color */
+    border-radius: 50%; /* Rounded shape */
+    cursor: pointer; /* Cursor style */
+  }
+  
+  /* Change track color */
+  .shopTitle input[type="range"]::-ms-track {
+    background: #f0f0f0; /* Background color of the track */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  /* Change track color when thumb is being dragged */
+  .shopTitle input[type="range"]:active::-ms-track {
+    background: #28c8a4;
+  }
