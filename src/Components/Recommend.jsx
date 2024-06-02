@@ -67,12 +67,11 @@ export default function Recommend() {
 }
 
 const Section = styled.section`
-  padding: 2rem 0;
   .title {
     text-align: center;
     font-size: 3rem;
       color:#4D869C;
-      margin-top:500px;
+      margin-top:50px;
   }
   .packages {
     display: flex;

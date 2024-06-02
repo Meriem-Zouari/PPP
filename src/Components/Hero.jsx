@@ -224,7 +224,6 @@ const Section = styled.section`
     justify-content: center;
     align-items: center;
     color: white;
-    padding: 0 20%;
     box-sizing: border-box;
 
     .title {
