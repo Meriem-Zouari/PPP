@@ -1,4 +1,4 @@
-#destination{
+/*#destination{
     width: 200px;
     height: 30px;
     display: flex;
@@ -55,21 +55,19 @@ button {
     width:50px;
   }
   .radio-container {
-    display: flex; /* Inline for side-by-side placement */
+    display: flex; 
     
     align-items: center;
-    margin-bottom: 10px; /* Adjust spacing as needed */
+    margin-bottom: 10px;
   }
 
   .radio-container label {
-    margin-right: 10px; /* Adjust spacing as needed */
-  }
-
+    margin-right: 10px; 
   input[type="radio"] {
-    margin-right: 5px; /* Adjust spacing as needed */
+    margin-right: 5px; 
   }
 
-  /* Optional styling for visual consistency (adjust as needed) */
+  
   .radio-container input[type="text"] {
     border: 1px solid #ccc;
     padding: 5px;
@@ -114,4 +112,351 @@ button {
   margin-top: 200px;
   margin-right: auto;
   margin-left: auto;
+}*/
+
+/*
+#Card {
+  position: relative;
+  padding: 20px;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5; 
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+.card {
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 20px;
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.card-header {
+  width: 100%;
+  height: 40px;
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.card-body {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+}
+
+.form-label {
+  margin-right: 5%;
+}
+
+#destination {
+  width: 200px;
+  height: 30px;
+  display: flex;
+  margin-right: 5%;
+}
+
+.label1 {
+  margin-right: 5%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #eee;
+}
+
+.radio-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.radio-container label {
+  margin-right: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+select {
+  width: 50px;
+}
+
+.background-image {
+  width: 100%;
+  height: auto;
+  background: url("../assets/plane.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.search-results {
+  margin-top: 20px;
+}
+
+.table {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table th, .table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.table tbody tr:nth-of-type(odd) {
+  background-color: #f3f3f3;
+}
+
+.table tbody tr:nth-of-type(even) {
+  background-color: #e7e7e7;
+}
+
+.table tbody tr:hover {
+  background-color: #dddddd;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+*/
+
+
+#Card {
+  position: relative;
+  padding: 20px;
+  padding-bottom: 0px;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5; /* Adjust opacity for desired effect */
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+.card {
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 20px;
+  backdrop-filter: blur(px);
+  -webkit-backdrop-filter: blur(9px);
+  
+
+
+
+}
+
+.card-header {
+  width: 100%;
+  height: 40px;
+  backdrop-filter: blur(px);
+  -webkit-backdrop-filter: blur(9px);
+  
+}
+
+.card-body {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  backdrop-filter: blur(px);
+  -webkit-backdrop-filter: blur(9px);
+
+  
+}
+
+.form-label {
+  margin-right: 5%;
+}
+
+#destination {
+  width: 200px;
+  height: 30px;
+  display: flex;
+  margin-right: 5%;
+}
+
+.label1 {
+  margin-right: 5%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #eee;
+}
+
+.radio-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.radio-container label {
+  margin-right: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+select {
+  width: 50px;
+}
+
+.background-image {
+  width: 100%;
+  height: auto;
+  background: url("../assets/plane.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.search-results-container {
+  
+  position: relative;
+  z-index: 1;
+  margin: 20px auto;
+  max-width: 1100px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.search-results h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.table {
+  margin-top:100px;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table th, .table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.table tbody tr:nth-of-type(odd) {
+  background-color: #f3f3f3;
+}
+
+.table tbody tr:nth-of-type(even) {
+  background-color: #e7e7e7;
+}
+
+.table tbody tr:hover {
+  background-color: #dddddd;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
 }

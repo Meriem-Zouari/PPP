@@ -4,7 +4,7 @@ import './Yourflight.css'
 const Yourflight = () => {
   return (
     <div>
-      flight informations 
+      Flight informations 
       
     </div>
   )
