@@ -315,13 +315,7 @@ function Bookingcard() {
       <div className='container'>
         <div className='background-image'>
           <div className="card text-center">
-            <div className="card-header">
-              <ul className="nav nav-tabs card-header-tabs">
-                <li className="nav-item">
-                  <a className="nav-link active" href="#">Flights</a>
-                </li>
-              </ul>
-            </div>
+           
             <div className="card-body">
               <form onSubmit={handleSubmit}>
                 <div className="form-row">
