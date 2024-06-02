@@ -142,7 +142,7 @@ export default function Hero() {
   const navigate = useNavigate();
 
   const handleExplore = () => {
-    navigate('/booking', { 
+    navigate('/Booking', { 
       state: { 
         destination, 
         departDate, 
