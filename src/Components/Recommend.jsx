@@ -72,7 +72,7 @@ const Section = styled.section`
     text-align: center;
     font-size: 3rem;
       color:#4D869C;
-      margin-top:500px;
+      margin-top:30px;
   }
   .packages {
     display: flex;

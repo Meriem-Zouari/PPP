@@ -1,13 +1,15 @@
-import React from 'react'
-import './Yourflight.css'
+
+import React from 'react';
+import './Yourflight.css';
+import FlightInfo from "./FlightInfo.jsx";
 
 const Yourflight = () => {
   return (
-    <div>
-      flight informations 
-      
+    <div className="your-flight">
+      <FlightInfo />
     </div>
-  )
-}
+  );
+};
 
-export default Yourflight
+export default Yourflight;
+

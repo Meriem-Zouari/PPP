@@ -14,7 +14,7 @@ const Userprofile = () => {
 
   return (
     <div className='userprofile' >
-      <div className='title' ><h1>My Profile</h1></div>
+      
       {/*<div>Userprofile , showing {activepage}</div>*/ }
       <div className='userprofilein' >
         <div className='left' >

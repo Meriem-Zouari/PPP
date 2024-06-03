@@ -1,39 +1,13 @@
-import React from 'react'
-
+/*import React from 'react'
+import info1 from "../../assets/info1.png";
+import info2 from "../../assets/info2.png";
+import info3 from "../../assets/info3.png";
 import styled from "styled-components";
 
 const Product = (props) => {
   const { id, title, subTitle, cost, image ,duration} = props.data;
-/*
+
   return (
-    <div className='product'>
-      <div className='box'>
-        <div className='card'>
-          <div className='image'>
-            <img src={productImage} alt='' />
-          </div>
-          <div className='desc'>
-            <h1>{title}</h1>
-            <p>{productName}</p>
-            <span>${price}</span>
-          </div>
-          <div className='star'>
-            <AiFillStar className='icon' />
-            <AiFillStar className='icon' />
-            <AiFillStar className='icon' />
-            <AiFillStar className='icon' />
-          </div>
-          <button className='addToCartBttn'>Book Now</button>
-
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default Product;
-*/
-return (
     <Section id="recommend">
 
       <div className="destinations">
@@ -43,7 +17,11 @@ return (
           <h3>{title}</h3>
           <p>{subTitle}</p>
           <div className="info">
-            
+            <div className="services">
+              <img src={info1} alt="" />
+              <img src={info2} alt="" />
+              <img src={info3} alt="" />
+            </div>
             <h4>{cost}</h4>
           </div>
           <div className="distance">
@@ -82,10 +60,12 @@ const Section = styled.section`
   }
   .destinations {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0;
+    grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
-    padding: 0 3rem;
+    padding: 0 ;
     .destination {
+      grid-gap: 50px;
       padding: 1rem;
       display: flex;
       flex-direction: column;
@@ -93,6 +73,8 @@ const Section = styled.section`
       background-color: #8338ec14;
       border-radius: 1rem;
       transition: 0.3s ease-in-out;
+      width:400px;
+      height:400px;
       &:hover {
         transform: translateX(0.4rem) translateY(-1rem);
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -110,7 +92,7 @@ const Section = styled.section`
             border-radius: 1rem;
             background-color: #4d2ddb84;
             width: 2rem;
-            /* padding: 1rem; */
+        
             padding: 0.3rem 0.4rem;
           }
         }
@@ -139,6 +121,132 @@ const Section = styled.section`
     .destinations {
       grid-template-columns: 1fr;
       padding: 0;
+    }
+  }
+`;*/
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import styled from "styled-components";
+
+const Product = (props) => {
+  const { id , title, subTitle, cost, image, duration } = props.data;
+  const navigate = useNavigate();
+
+  const handleBookNow = () => {
+    navigate('/Booking', { 
+      state: { 
+        destinationId: id,
+        title,
+        subTitle,
+        cost,
+        duration
+      } 
+    });
+  };
+  return (
+    <StyledProduct>
+      <div className="image-container">
+        <img src={image} alt={title} />
+        <div className="price">${cost}</div>
+      </div>
+      <div className="info">
+        <h3>{title}</h3>
+        <p>{subTitle}</p>
+        <div className="details">
+          
+          <span>{duration}</span>
+        </div>
+        <button onClick={handleBookNow}>Book Now</button>
+      </div>
+    </StyledProduct>
+  );
+};
+
+export default Product;
+
+const StyledProduct = styled.div`
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  .image-container {
+    position: relative;
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .price {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #4361ee;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 25px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .info {
+    padding: 20px;
+    h3 {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #666;
+      margin-bottom: 15px;
+    }
+    .details {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      .services {
+        display: flex;
+        gap: 10px;
+        img {
+          width: 30px;
+          padding: 5px;
+          background-color: #f0f0f0;
+          border-radius: 50%;
+          transition: all 0.3s ease;
+          &:hover {
+            background-color: #4361ee;
+            transform: scale(1.1);
+          }
+        }
+      }
+      span {
+        font-weight: bold;
+        color: #4361ee;
+      }
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(135deg, #4ecdc4 0%, #45b7d9 50%, #0077be 100%);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+      &:hover {
+        background: linear-gradient(135deg, #40b5ac 0%, #3d9fbf 50%, #0066a6 100%);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      }
     }
   }
 `;

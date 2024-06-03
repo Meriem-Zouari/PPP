@@ -63,7 +63,7 @@ const Login = () => {
             Sign in
           </button>
         </div> 
-        
+        <a href='/Register'>SIGN UP</a>
       </div>
     </div>
   )

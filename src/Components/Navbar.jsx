@@ -1,3 +1,4 @@
+/*import React from 'react';
 import styled from  "styled-components";
 import image from "../assets/image.png"
 import {Link} from "react-router-dom"
@@ -6,61 +7,58 @@ export default function Navbar() {
   return (
       <Nav>
         <div className='brand'>
-          <div className='container'>
             <img src={image }alt="OOGA" />
         </div>
-        </div>
+        <div className='navi'>
         <ul>
         <li>        
-          <Link to="/">HOME</Link>
+          <Link to="/">Home</Link>
         </li>
-        <li>        
-          <Link to="/Dashboard">ADMINDASHBOARD</Link>
-        </li>
-        <li><Link to="/Register">SIGN UP</Link></li>
-        <li><Link to="/Login">SIGN IN</Link></li>
+        <li><Link to="/Connect">Connect</Link></li>
           <li>
-            <Link to="/Destinations">DESTINATIONS</Link>
+            <Link to="/Destinations">Destinations</Link>
           </li>
-          
           <li>
-          <Link to="/user/accountsettings">PROFILE</Link>
+            <a href="#testimonials">Testimonials</a>
+          </li>
+          <li>
+          <Link to="/user/accountsettings">Profile</Link>
         </li>
         </ul>
+        </div>
       </Nav>
 
 
     );
 }
 const Nav = styled.nav`
-
-display: flex;
-
-align-items: center;
-brand{
-  .container {
-    cursor: pointer ;
-    display: flex ;
-    justify-content: center ;
-    align-items: center ;
-    gap: 0.4 rem ;
-    font-size: 1.2 rem ;
-    font-weight: 900 ;
-    width:50px;
-    height:50px;
-
-  }
-  .toggle
-  {
-  .display: none;
-  }
+padding-top:20px;
+.navi{
+  display: fit-content;
+  background-color: #F5F2E9;
+  padding-right: 20px;
+  border-radius: 15px 50px;
 }
+background-color: #0d8d9e;
+display: flex;
+img {
+  padding-left: 50px;
+  width: 80%
+}
+ul {
+  padding-top: 14px;
+
+}
+align-items: center;
 ul
 {
 display:flex;
 list-style-type: none;
 gap: 1rem; 
-
+brand{
+  background-color:black;
+  padding: 500px;
+}
 li
 {
   a{
@@ -97,4 +95,119 @@ button
     background-color:#023e8a;
   } 
 }
+`;*/
+
+import React from 'react';
+import styled from "styled-components";
+import image from "../assets/Capture.png"
+import {Link} from "react-router-dom"
+
+export default function Navbar() {
+  return (
+    <Nav>
+      <div className='brand'>
+        <img src={image} alt="OOGA" />
+      </div>
+      <div className='navi'>
+        <ul>
+          <li>        
+            <Link to="/">Home</Link>
+          </li>
+          <li><Link to="/Login">Connect</Link></li>
+          <li>
+            <Link to="/Destinations">Destinations</Link>
+          </li>
+          <li>
+            <Link to="/user/accountsettings">Profile</Link>
+          </li>
+        </ul>
+      </div>
+    </Nav>
+  );
+}
+
+const Nav = styled.nav`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white ;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  .brand {
+    img {
+      width: 200px;
+      height: 100%;
+      transition: transform 0.3s ease-in-out;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .navi {
+    ul {
+      display: flex;
+      list-style-type: none;
+      gap: 2rem; 
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      padding-right: 20px;
+      border-radius: 15px 50px;
+
+      li {
+        position: relative;
+
+        a {
+          text-decoration: none;
+          color: #004AAC;
+          font-size: 1rem;
+          font-weight: 500;
+          font-family: Arial, sans-serif;
+          text-transform: uppercase;
+          letter-spacing: 0.1rem;
+          transition: color 0.3s ease-in-out;
+
+          &:hover {
+            color: #ffce00;
+          }
+
+          &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: white;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-in-out;
+          }
+
+          &:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+          }
+        }
+
+        &:first-of-type a {
+          color: #ffce00;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 1rem;
+
+    .navi ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
 `;

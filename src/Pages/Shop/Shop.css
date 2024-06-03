@@ -162,72 +162,162 @@
     width:90%;
   }
 }
-
+/*********************/
 /* Style the price filter range */
-.shopTitle input[type="range"] {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 10px;
-    background: #f0f0f0; /* Background color of the track */
-    outline: none; /* Remove outline */
-    opacity: 0.7; /* Set opacity */
-    transition: opacity 0.2s;
-    border-radius: 5px; /* Rounded corners */
-    margin-top: 20px;
+/*.shopTitle input[type="range"] {
+  -webkit-appearance: none;
+  width: 80%;
+  height: 10px;
+  background: #0f0fde; 
+  outline: none; 
+  opacity: 0.7; 
+  transition: opacity 0.2s;
+  border-radius: 5px; 
+  margin-top: 20px;
+}
+
+
+.shopTitle input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #6790e1; 
+  border-radius: 50%; 
+  cursor: pointer;
+}
+
+
+.shopTitle input[type="range"]::-webkit-slider-thumb:hover {
+  background: #28c8a4;
+}
+
+
+.shopTitle input[type="range"]:active::-webkit-slider-thumb {
+  background: #28c8a4;
+}
+
+
+.shopTitle input[type="range"]::-moz-range-track {
+  background: #f0f0f0; 
+  border-radius: 5px; 
+}
+
+
+.shopTitle input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #28c8a4; 
+  border-radius: 50%; 
+  cursor: pointer; 
+}
+
+
+.shopTitle input[type="range"]::-ms-thumb {
+  width: 20px;
+  height: 20px;
+  background: #28c8a4; 
+  border-radius: 50%; 
+  cursor: pointer; 
+}
+
+
+.shopTitle input[type="range"]::-ms-track {
+  background: #f0f0f0; 
+  border-radius: 5px; 
+}
+
+
+.shopTitle input[type="range"]:active::-ms-track {
+  background: #28c8a4;
+}
+
+.destinations {
+  display: grid;
+  width: 100%;
+  padding:5%;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0 px;  
+  padding: 0px 30px;
+}
+*/
+.shop {
+  padding: 50px 5%;
+  background-color: #f9f9f9;
+}
+
+.shop-header {
+  text-align: center;
+  margin-bottom: 40px;
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
   }
-  
-  /* Style the thumb (indicator) of the range */
-  .shopTitle input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 20px;
-    height: 20px;
-    background: #28c8a4; /* Thumb color */
-    border-radius: 50%; /* Rounded shape */
-    cursor: pointer; /* Cursor style */
+  p {
+    color: #666;
+    font-size: 1.1rem;
   }
-  
-  /* Change thumb color on hover */
-  .shopTitle input[type="range"]::-webkit-slider-thumb:hover {
-    background: #28c8a4;
+}
+
+.price-filter {
+  max-width: 600px;
+  margin: 0 auto 50px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
   }
-  
-  /* Change track color when thumb is being dragged */
-  .shopTitle input[type="range"]:active::-webkit-slider-thumb {
-    background: #28c8a4;
+  .filter-control {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    input[type="range"] {
+      flex-grow: 1;
+      -webkit-appearance: none;
+      height: 10px;
+      background: linear-gradient(90deg, #4ecdc4 0%, #45b7d9 50%, #0077be 100%);
+      outline: none;
+      border-radius: 5px;
+      &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 25px;
+        height: 25px;
+        background-color: white;
+        border: 3px solid #0077be;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    span {
+      font-weight: bold;
+      color: #0077be;
+      width: 80px;
+      text-align: center;
+    }
   }
-  
-  /* Change track color */
-  .shopTitle input[type="range"]::-moz-range-track {
-    background: #f0f0f0; /* Background color of the track */
-    border-radius: 5px; /* Rounded corners */
-  }
-  
-  /* Style for the thumb (indicator) in Firefox */
-  .shopTitle input[type="range"]::-moz-range-thumb {
-    width: 20px;
-    height: 20px;
-    background: #28c8a4; /* Thumb color */
-    border-radius: 50%; /* Rounded shape */
-    cursor: pointer; /* Cursor style */
-  }
-  
-  /* Style for the thumb (indicator) in IE */
-  .shopTitle input[type="range"]::-ms-thumb {
-    width: 20px;
-    height: 20px;
-    background: #28c8a4; /* Thumb color */
-    border-radius: 50%; /* Rounded shape */
-    cursor: pointer; /* Cursor style */
-  }
-  
-  /* Change track color */
-  .shopTitle input[type="range"]::-ms-track {
-    background: #f0f0f0; /* Background color of the track */
-    border-radius: 5px; /* Rounded corners */
-  }
-  
-  /* Change track color when thumb is being dragged */
-  .shopTitle input[type="range"]:active::-ms-track {
-    background: #28c8a4;
-  }
+}
+
+.destinations {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 0 30px;
+}
+
+@media (max-width: 768px) {
+  .shop-header h1 { font-size: 2rem; }
+  .price-filter { padding: 20px; }
+  .destinations { padding: 0; }
+}
