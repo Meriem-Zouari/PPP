@@ -404,9 +404,6 @@ select {
 }
 
 .search-results-container {
-  
-  position: relative;
-  z-index: 1;
   margin: 20px auto;
   max-width: 1100px;
   background-color: rgba(255, 255, 255, 0.8);
@@ -420,7 +417,6 @@ select {
 }
 
 .table {
-  margin-top:100px;
   width: 100%;
   border-radius: 8px;
   overflow: hidden;
@@ -433,7 +429,7 @@ select {
 
 .table th {
   background-color: #007bff;
-  color: #ffffff;
+  color:#0056b3;
 }
 
 .table tbody tr:nth-of-type(odd) {

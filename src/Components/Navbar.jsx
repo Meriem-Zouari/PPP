@@ -118,9 +118,6 @@ export default function Navbar() {
             <Link to="/Destinations">Destinations</Link>
           </li>
           <li>
-            <a href="#testimonials">Testimonials</a>
-          </li>
-          <li>
             <Link to="/user/accountsettings">Profile</Link>
           </li>
         </ul>

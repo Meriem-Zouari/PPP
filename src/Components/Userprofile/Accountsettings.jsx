@@ -24,3 +24,4 @@ const Accountsettings = () => {
 }
 
 export default Accountsettings
+
